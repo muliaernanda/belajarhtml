@@ -1,0 +1,161 @@
+/*
+ * RESET & BASE
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #3E2723;
+    background-color: #FFFDE7;
+}
+
+/* SELECTOR ELEMEN */
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #E65100;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #FFE082;
+    padding-bottom: 6px;
+}
+
+p {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+code {
+    background-color: #FFF8E1;
+    color: #F57F17;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+/* ===== SELECTOR ID Header ===== */
+#site-header {
+    background: linear-gradient(135deg, #F57F17, #FFB300);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#site-header p {
+    color: #FFF8E1;
+    font-style: italic;
+    margin-top: 8px;
+    font-size: 1.1rem;
+}
+
+/* ===== SELECTOR ID Footer ===== */
+#site-footer {
+    background-color: #3E2723;
+    color: #FFE082;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* ===== SELECTOR CLASS Layout ===== */
+.konten-utama {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.kartu {
+    background-color: white;
+    border: 1px solid #FFE082;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(62, 39, 35, 0.08);
+}
+
+.kartu.highlight {
+    border-left: 5px solid #2E7D32;
+    background-color: #F1F8E9;
+}
+
+/* ===== PROPERTI TEKS ===== */
+.teks-kecil {
+    font-size: 0.85rem;
+    color: #6D4C41;
+    font-style: italic;
+}
+
+.teks-besar {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #E65100;
+}
+
+.teks-bayangan {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F57F17;
+    text-shadow: 2px 2px 0px rgba(245, 127, 23, 0.3);
+}
+
+.teks-kapital {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    color: #2E7D32;
+}
+
+/* ===== BACKGROUND ===== */
+#demo-warna {
+    background-color: #FFF8E1;
+    border-color: #FFB300;
+}
+
+.demo-bg {
+    background: linear-gradient(120deg, #F57F17, #FFB300, #FFE082);
+    color: #3E2723;
+    border: none;
+}
+
+.demo-bg h2 {
+    color: #3E2723;
+    border-bottom-color: rgba(62, 39, 35, 0.3);
+}
+
+.demo-bg p {
+    color: rgba(62, 39, 35, 0.9);
+}
+
+/* Grouping selector */
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Descendant selector: <p> di dalam kartu.highlight */
+.kartu.highlight p {
+    color: #1B5E20;
+}
+
+/* Pseudo-class: saat elemen kartu di-hover */
+.kartu:hover {
+    box-shadow: 0 6px 20px rgba(245, 127, 23, 0.25);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Universal selector jarang digunakan selain untuk reset */
+/* * { outline: 1px solid red; } */
