@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo CSS Box Model & Layout</title>
+    <link rel="stylesheet" href="b1.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul style="list-style: none; margin: 0; padding: 10px;">
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#display">Display</a></li>
+            <li><a href="#position">Position</a></li>
+            <li><a href="#overflow">Overflow</a></li>
+        </ul>
+    </nav>
+
+    <div style="padding-top: 60px;">
+
+        <section id="box-model">
+            <h2>B.1 CSS Box Model</h2>
+            <div class="kotak">
+                <p>Ini adalah area Content di dalam Kotak.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="display">
+            <h2>B.2 Properti Display</h2>
+            
+            <p>Elemen <code>&lt;a&gt;</code> diubah menjadi <strong>block</strong>:</p>
+            <nav>
+                <a href="#">Link Block 1</a>
+                <a href="#">Link Block 2</a>
+            </nav>
+
+            <br>
+            <p>Elemen <code>&lt;li&gt;</code> diubah menjadi <strong>inline-block</strong>:</p>
+            <nav>
+                <ul style="padding: 0;">
+                    <li>Menu Inline 1</li>
+                    <li>Menu Inline 2</li>
+                    <li>Menu Inline 3</li>
+                </ul>
+            </nav>
+
+            <p class="tersembunyi">Teks ini menggunakan display: none (tidak terlihat).</p>
+            <p class="transparan">Teks ini menggunakan visibility: hidden (tidak terlihat tapi mengambil ruang).</p>
+        </section>
+
+        <hr>
+
+        <section id="position">
+            <h2>B.3 Properti Position</h2>
+
+            <div class="section-header">
+                <h3>Judul Section (Sticky Header)</h3>
+            </div>
+
+            <p class="kotak-relative">Ini posisi Relative (bergeser 10px ke bawah, 20px ke kanan).</p>
+
+            <div class="parent" style="background-color: #f2f2f2; border: 1px solid #ccc; margin-top: 20px;">
+                <p style="padding: 10px;">Area Parent (Relative)</p>
+                <span class="badge">NEW</span>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="overflow">
+            <h2>B.4 Properti Overflow</h2>
+
+            <h3>1. Overflow-y: auto</h3>
+            <div class="panel-teks">
+                <p>Paragraf 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Paragraf 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Paragraf 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Paragraf 4: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+
+            <br>
+
+            <h3>2. Text Overflow Ellipsis</h3>
+            <p class="judul-kartu">Ini adalah contoh judul kartu yang sangat panjang sekali sehingga akan terpotong dan memunculkan titik-titik di akhir teks.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
